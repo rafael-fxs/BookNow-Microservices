@@ -21,7 +21,7 @@ O **booknow_database** tem que importar no MySQL.
 Para clonar este repositório principal junto com todos os submódulos, execute o seguinte comando:
 
 ```bash
-git clone --recurse-submodules https://github.com/seu_usuario/BookNow-Microservices.git](https://github.com/rafael-fxs/BookNow-Microservices.git
+git clone --recurse-submodules https://github.com/rafael-fxs/BookNow-Microservices.git
 ```
 Esse comando fará o clone do repositório principal e de todos os submódulos definidos.
 
