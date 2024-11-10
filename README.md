@@ -32,6 +32,13 @@ Se você já clonou o repositório principal e deseja atualizar os submódulos, 
 git submodule update --init --recursive
 ```
 
+## Build dos Microserviços
+Antes de executar o projeto no Docker, você precisa fazer o build de cada um dos microserviços.
+
+No menu Maven (normalmente localizado na barra lateral direita), expanda o submódulo e clique em Lifecycle > package. Isso executará o clean e package, gerando o .jar para cada serviço.
+
+Repita o passo para cada um dos submódulos que precisa ser empacotado.
+
 ## Configuração e Execução com Docker
 Este projeto está configurado para ser executado com Docker Compose. Certifique-se de ter o Docker e o Docker Compose instalados na sua máquina antes de prosseguir.
 
