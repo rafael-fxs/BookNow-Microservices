@@ -1,0 +1,76 @@
+x-environment: &default-environment
+  SPRING_DATASOURCE_URL: jdbc:mysql://host.docker.internal:3306/booknow_database
+  SPRING_DATASOURCE_USERNAME: root
+  SPRING_DATASOURCE_PASSWORD: 123456
+  EUREKA_URI: http://registra-service:8761/eureka
+  USUARIO_SERVICE_URL: http://usuario-service:8081
+  LIVROS_SERVICE_URL: http://livros-service:8082
+  TRANSACOES_SERVICE_URL: http://pontos-service:8083
+  AVALIACAO_SERVICE_URL: http://avaliacao-service:8084
+
+services:
+  registra-service:
+    image: eurekaserver_image
+    build:
+      context: ./book-now_servico_registra
+    container_name: registra-service
+    ports:
+      - "8761:8761"
+
+  usuario-service:
+    build:
+      context: ./BookNow_Usuarios/BookNowUsuario
+    container_name: usuario-service
+    ports:
+      - "8081:8081"
+    environment:
+      <<: *default-environment
+    depends_on:
+      - registra-service
+
+  livros-service:
+    build:
+      context: ./Microservico-livro/BookNow-service
+    container_name: livros-service
+    ports:
+      - "8082:8082"
+    environment:
+      <<: *default-environment
+    depends_on:
+      - registra-service
+
+  pontos-service:
+    build:
+      context: ./book-now_servico_pontos
+    container_name: pontos-service
+    ports:
+      - "8083:8083"
+    environment:
+      <<: *default-environment
+    depends_on:
+      - registra-service
+
+  avaliacao-service:
+    build:
+      context: ./booknow_avaliacao
+    container_name: avaliacao-service
+    ports:
+      - "8084:8084"
+    environment:
+      <<: *default-environment
+    depends_on:
+      - registra-service
+
+  api-gateway:
+    build:
+      context: ./book-now_servico_apigateway
+    container_name: api-gateway-service
+    ports:
+      - "80:80"
+    environment:
+      <<: *default-environment
+    depends_on:
+      - usuario-service
+      - livros-service
+      - pontos-service
+      - avaliacao-service
