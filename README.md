@@ -1,6 +1,6 @@
 # BookNow-Microservices
 
-Este é o repositório principal do projeto **BookNow**, que utiliza uma arquitetura de microserviços para gerenciar diferentes serviços de um sistema de reservas e avaliações de livros. Cada serviço é gerenciado como um repositório separado, e todos eles são integrados aqui usando submódulos Git.
+Este é o repositório principal do projeto **BookNow**, que utiliza uma arquitetura de microserviços para gerenciar diferentes serviços de um sistema de compra com pontos e avaliações de livros. Cada serviço é gerenciado como um repositório separado, e todos eles são integrados aqui usando submódulos Git.
 
 ## Serviços
 
