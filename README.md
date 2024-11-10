@@ -37,6 +37,7 @@ Este projeto está configurado para ser executado com Docker Compose. Certifique
 
 Passo a Passo para Executar o Projeto
 1. Build dos Containers:
+   
 No diretório principal do projeto, execute o seguinte comando para construir e iniciar todos os contêineres:
 
 ```bash
@@ -44,6 +45,7 @@ docker-compose up --build
 ```
 
 3. Acessar os Serviços:
+
 Após a inicialização, os serviços estarão disponíveis nas seguintes portas locais:
 
 Eureka Server: http://localhost:8761
@@ -52,6 +54,7 @@ Outros serviços estarão disponíveis através do Gateway.
 
 ## Comandos Úteis
 1. Atualizar Submódulos
+   
 Para atualizar todos os submódulos para as versões mais recentes, use:
 
 ```bash
@@ -59,6 +62,7 @@ git submodule update --remote
 ```
 
 2. Parar os Contêineres
+   
 Para parar e remover os contêineres criados, execute:
 
 
