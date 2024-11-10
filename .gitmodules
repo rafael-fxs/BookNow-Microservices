@@ -1,0 +1,21 @@
+[submodule "book-now_servico_registra"]
+	path = book-now_servico_registra
+	url = https://github.com/rafael-fxs/book-now_servico_registra.git
+[submodule "book-now_servico_apigateway"]
+	path = book-now_servico_apigateway
+	url = https://github.com/rafael-fxs/book-now_servico_apigateway.git
+[submodule "Microservico-livro"]
+	path = Microservico-livro
+	url = https://github.com/MIcaelFone/Microservico-livro.git
+[submodule "booknow_avaliacao"]
+	path = booknow_avaliacao
+	url = https://github.com/Noreh0/booknow_avaliacao.git
+[submodule "booknow_database"]
+	path = booknow_database
+	url = https://github.com/Noreh0/booknow_database.git
+[submodule "BookNow_Usuarios"]
+	path = BookNow_Usuarios
+	url = https://github.com/Noreh0/BookNow_Usuarios.git
+[submodule "book-now_servico_pontos"]
+	path = book-now_servico_pontos
+	url = https://github.com/rafael-fxs/book-now_servico_pontos.git
