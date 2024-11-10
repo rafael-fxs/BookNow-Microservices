@@ -10,9 +10,11 @@ O repositório contém os seguintes microserviços:
 2. **book-now_servico_apigateway**: API Gateway para roteamento de requisições.
 3. **Microservico-livro**: Serviço para gerenciar livros.
 4. **booknow_avaliacao**: Serviço para avaliações de livros.
-5. **booknow_database**: Configurações do banco de dados.
-6. **BookNow_Usuarios**: Serviço de gerenciamento de usuários.
-7. **book-now_servico_pontos**: Serviço para gerenciamento de pontos.
+5. **BookNow_Usuarios**: Serviço de gerenciamento de usuários.
+6. **book-now_servico_pontos**: Serviço para gerenciamento de pontos.
+
+
+O **booknow_database** tem que importar no MySQL.
 
 ## Como Clonar o Repositório com Submódulos
 
